@@ -1,4 +1,4 @@
-class Ground{
+class Roof{
 
 	constructor(x,y,width,height){
 		var GroundOpt = {isStatic:true}
@@ -13,7 +13,7 @@ class Ground{
 	display(){
 		var angle = this.body.angle;
 		push();
-		fill("brown")
+		fill("black")
 		translate(this.pos.x,this.pos.y);
 		rotate(angle);
 		rect(0,0,this.width,this.height)
