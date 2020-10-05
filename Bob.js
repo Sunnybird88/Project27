@@ -2,7 +2,7 @@ class Bob{
 
 	constructor(x,y,radius,isStatic){
 
-		var paperOpt = {isStatic:isStatic,restitution:0,friction:0,density:1}
+		var paperOpt = {isStatic:isStatic,restitution:1.2,friction:0,density:1}
 		ellipseMode(RADIUS);
 		this.body = Bodies.circle(x,y,radius,paperOpt);
 		this.radius = radius;
